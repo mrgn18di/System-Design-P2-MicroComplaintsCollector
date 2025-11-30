@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Micro Complaints Collector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Micro Complaints Collector 💀</h1>
+    <p class="subtitle">Log your tiny everyday annoyances. It’s free therapy (kind of).</p>
+
+    <section class="form-section">
+      <h2>Add a complaint</h2>
+      <form id="complaint-form">
+        <label for="complaint-text">What is your complaint?</label>
+        <textarea id="complaint-text" rows="3" placeholder="Example: why does the bus only arrive when I start walking??"></textarea>
+
+        <label for="category">Category</label>
+        <select id="category">
+          <option value="">Select a category</option>
+          <option value="school">School</option>
+          <option value="transit">Transit</option>
+          <option value="food">Food</option>
+          <option value="home">Home</option>
+          <option value="people">People</option>
+          <option value="random">Random</option>
+          <option value="other">Other</option>
+        </select>
+
+        <fieldset class="intensity-group">
+          <legend>Intensity</legend>
+          <label>
+            <input type="radio" name="intensity" value="mild" />
+            😐 mild
+          </label>
+          <label>
+            <input type="radio" name="intensity" value="bad" />
+            😫 bad
+          </label>
+          <label>
+            <input type="radio" name="intensity" value="meltdown" />
+            💀 meltdown
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit complaint</button>
+        <p id="form-message" class="message"></p>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Latest complaints</h2>
+      <div id="complaints-list" class="complaints-list">
+        <!-- complaints will be injected here by script.js -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
