@@ -19,7 +19,7 @@ Technologies Used
 
 How to Run
 1. Install dependencies: npm install
-2. Create a .env file with: MONGO_URI=your-mongodb-connection-string
+2. Create a .env file with: MONGO_URL=your-mongodb-connection-string
 3. Start the server: node server.js
 4. Open the app in a browser: http://localhost:3000
 
